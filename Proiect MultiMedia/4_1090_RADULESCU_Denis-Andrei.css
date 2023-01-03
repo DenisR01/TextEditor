@@ -1,0 +1,44 @@
+body{
+    margin:0;
+    font-family:Arial;
+
+}
+
+.editor{
+    display:flex;
+    width:100vw;
+    height: 100vh;
+   
+}
+.toolbar{
+    width: 200px;
+    background:turquoise;
+
+
+}
+.toolbar-label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.zonaImagine{
+    flex-grow: 1;
+    padding:20px;
+    background:#555;
+}
+#canvas{
+    max-width:100% ;
+    max-height:100%;
+}
+button {
+    margin-top: 10%;
+    background: yellowgreen;
+    border: 4px solid black;
+    color: black;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-family: 'Arial';
+  }
