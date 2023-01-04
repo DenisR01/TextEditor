@@ -14,21 +14,33 @@
             <div class="toolbar-item">
                 <input type="file" id="IntroducereImagine">
             </div>
+            <div><button id="crop">Crop Image</button></div>
+            <div><button id="delete">Delete Selection</button></div>
+            <div><button id="invertColor" onclick="invertColor()">InvertColor</button></div>
+            <div><button id="addText" onclick="addText()">Add Text</button></div>
+            <p>text:</p>
+            <input type="text" id="textToAdd">
+            <p>size</p>
+            <input type="text" id="textSize">
+            <p>color</p>
+            <input type="text" id="textColor">
 
-            <div><button class="crop">Crop Image</button></div>
-
-          
-
-          
+                <button type="submit" onclick="resize()">Resize</button>
+                <div>
+                  <input type="radio" id="height" name="drone" value="height" onclick="setResizeType('height')" checked>
+                  <label for="height">Height</label>
+                </div>
+                <div>
+                  <input type="radio" id="width" name="drone" value="width" onclick="setResizeType('width')">
+                  <label for="width">Width</label>
+                </div>
+                <input type="text" id="rescaleValue">
 
         </div>
+
         <div class="zonaImagine">
             <canvas id="canvas" height="450" width="450"></canvas>
-
-
         </div>
-
-        
     </div>
 </body>
 </html>

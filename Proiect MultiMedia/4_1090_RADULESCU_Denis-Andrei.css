@@ -12,26 +12,30 @@ body{
 }
 .toolbar{
     width: 200px;
+    height: 100%;
     background:turquoise;
-
-
+    position: fixed;
 }
+
 .toolbar-label{
     display: block;
     margin-bottom: 5px;
     font-size: 15px;
     font-weight: bold;
+    position: fixed;
 }
 
 .zonaImagine{
     flex-grow: 1;
     padding:20px;
-    background:#555;
+    background:white;
 }
+
 #canvas{
-    max-width:100% ;
-    max-height:100%;
+    margin-left: 220px;
+    margin-top: 20px;
 }
+
 button {
     margin-top: 10%;
     background: yellowgreen;
