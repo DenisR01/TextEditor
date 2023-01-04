@@ -98,7 +98,7 @@ cropButton.addEventListener("click", ()=>{
 
 deleteButton.addEventListener("click", ()=>{
     let corners = getCorners(selectionStartPoint, selectionEndPoint);
-
+    renderImage();
     myCanvasCtx.clearRect(corners.topLeft.x, corners.topLeft.y, 
                           corners.bottomRight.x - corners.topLeft.x, corners.bottomRight.y - corners.topLeft.y);
     applyChanges();
